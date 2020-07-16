@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import leftPanel from './src/leftPanel';
 import imageSurface from './src/imageSurface';
-import StorySurface from './src/StorySurface';
 
 
 import {
@@ -62,4 +61,3 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('my360App', () => my360App);
 AppRegistry.registerComponent('leftPanel', () => leftPanel);
 AppRegistry.registerComponent('imageSurface', () => imageSurface);
-AppRegistry.registerComponent('StorySurface', () => StorySurface);
