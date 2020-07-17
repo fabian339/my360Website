@@ -10,10 +10,10 @@ export const About = () => {
             Marcos Fabian is a Software Engineer that loves developing cool applications. 
             He is very passionate about technology and love to keep learning 
             and innovating in the field. He started his career in the 
-            engenieer field at the age of 16 when he first built a computer 
+            engineering field at the age of 16 when he first built a computer 
             from scratch. That was the trigger point that made him pursue a 
             career in computer science. Additionally, he loves challenges. 
-            He personally believes that the best way of learning is by going 
+            He believes that the best way of learning is by going 
             through situations that will elevate his skill-set.  
         </Text>
     </View>
@@ -50,14 +50,14 @@ export const Resume = () => {
         </View>
         <View>
             <Text style={styles.porsition}>East Side House Settlement (Bronx, NY)</Text>
-            <Text style={styles.detail}>Instruct clients in the ages 16 to 24 in different
+            <Text style={styles.detail}>Instructed clients in the ages 16 to 24 in different
                 levels of Algebra, Geometry, and Pre-calculus</Text>
-            <Text style={styles.detail}>Create and implement lesson throughout the
+            <Text style={styles.detail}>Created and implemented lesson throughout the
                 academic year</Text>
-            <Text style={styles.detail}>Establish rules and regulations to ensure a health
+            <Text style={styles.detail}>Established rules and regulations to ensure a health
                 classroom environment</Text>
-            <Text style={styles.detail}>Tutor clients daily for reinforcement in Math</Text>
-            <Text style={styles.detail}>Create and update math website to better students
+            <Text style={styles.detail}>Tutored clients daily for reinforcement in Math</Text>
+            <Text style={styles.detail}>Created and updated math website to better students
                 learning experience</Text>
         </View>
     </View>

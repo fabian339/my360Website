@@ -11,11 +11,18 @@ function init(bundle, parent, options = {}) {
   const leftPanel = new Surface(1050, 1000, Surface.SurfaceShape.Flat);
   const skillSurface = new Surface(1024, 1050, Surface.SurfaceShape.Flat);
   const imageSurface = new Surface(400, 400, Surface.SurfaceShape.Flat);
+  const resumeIcon = new Surface(800, 600, Surface.SurfaceShape.Flat);
 
 
   leftPanel.setAngle(-1.3, -.15);
   skillSurface.setAngle(-3.25, -.1);
   imageSurface.setAngle(0, -0.03);
+  resumeIcon.setAngle(1.65, -0.05);
+
+  r360.renderToSurface(
+    r360.createRoot('resumeIcon'),
+    resumeIcon,
+  );
 
   r360.renderToSurface(
     r360.createRoot('leftPanel'),

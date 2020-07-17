@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import leftPanel from './src/leftPanel';
 import imageSurface from './src/imageSurface';
 import skillSurface from './src/skillSurface';
+import resumeIcon from './src/resumeIcon';
 
 
 
@@ -64,3 +65,4 @@ AppRegistry.registerComponent('my360App', () => my360App);
 AppRegistry.registerComponent('leftPanel', () => leftPanel);
 AppRegistry.registerComponent('imageSurface', () => imageSurface);
 AppRegistry.registerComponent('skillSurface', () => skillSurface);
+AppRegistry.registerComponent('resumeIcon', () => resumeIcon);

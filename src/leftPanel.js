@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {Image, StyleSheet, Text, View, VrButton, NativeModules} from 'react-360';
-import { About, Resume, Passion } from './helper'
-// const {SurfaceModule} = NativeModules;
+import {Image, StyleSheet, Text, View, VrButton, NativeModules, asset} from 'react-360';
+import { About, Resume, Passion } from './helper';
+import ContactIcons from './ContactIcons';
 
 export default class leftPanel extends React.Component {
   state = {
@@ -9,10 +9,13 @@ export default class leftPanel extends React.Component {
     hover1: false,
     hover2: false,
     hover3: false,
+    hover4: false,
+
     openList: [
       {name: 'about',open: false},
       {name: 'resume', open: false},
       {name: 'passion', open: false},
+      {name: 'contact', open: false},
     ]
 
   };
@@ -49,12 +52,25 @@ export default class leftPanel extends React.Component {
     NativeModules.LinkingManager.openURL(url);
   }
 
+  onClickContact = e => {
+    let tempArray = this.state.openList;
+    tempArray.forEach(item => {
+      if (item.name === 'contact' ) item.open = !item.open;
+      else item.open = false;
+    })
+    this.setState({openList: tempArray})
+}
+
+
   render() {
-    const { hover0, hover1, hover2, hover3, 
+    const { hover0, hover1, hover2, hover3, hover4, 
     openList } = this.state;
     // console.log(openAbout);
     return (
       <View style={{width: 900, height:900}}>
+        <View>
+          <Text style={styles.menuTitle}>Click to view: </Text>
+        </View>
         <View style={styles.menuWrapper}>
           <VrButton style={hover0 ? styles.textBoxHover : styles.textBox}
             onEnter={() => this.setState({hover0: true})}
@@ -62,23 +78,29 @@ export default class leftPanel extends React.Component {
             onClick={this.onClickAbout}> 
             <Text style={styles.postButtonName}>About Me</Text>
           </VrButton>
+          <VrButton style={hover1 ? styles.textBoxHover : styles.textBox}
+            onEnter={() => this.setState({hover1: true})}
+            onExit={() => this.setState({hover1: false})}
+            onClick={this.onClickResume}>  
+            <Text style={styles.postButtonName}>My Resume</Text>
+          </VrButton>
           <VrButton style={hover2 ? styles.textBoxHover : styles.textBox}
             onEnter={() => this.setState({hover2: true})}
             onExit={() => this.setState({hover2: false})}
-            onClick={this.onClickResume}>  
-            <Text style={styles.postButtonName}>My Resume</Text>
+            onClick={this.onClickPassion}>  
+            <Text style={styles.postButtonName}>Passions</Text>
           </VrButton>
           <VrButton style={hover3 ? styles.textBoxHover : styles.textBox}
             onEnter={() => this.setState({hover3: true})}
             onExit={() => this.setState({hover3: false})}
-            onClick={this.onClickPassion}>  
-            <Text style={styles.postButtonName}>Passion</Text>
-          </VrButton>
-          <VrButton style={hover1 ? styles.textBoxHover : styles.textBox}
-            onEnter={() => this.setState({hover1: true})}
-            onExit={() => this.setState({hover1: false})}
             onClick={this.onClickProjects}> 
             <Text style={styles.postButtonName}>My Projects</Text>
+          </VrButton>
+          <VrButton style={hover4 ? styles.textBoxHover : styles.textBox}
+            onEnter={() => this.setState({hover4: true})}
+            onExit={() => this.setState({hover4: false})}
+            onClick={this.onClickContact}> 
+            <Text style={styles.postButtonName}>Contact</Text>
           </VrButton>
         </View>
         {openList[0].open && (
@@ -98,6 +120,11 @@ export default class leftPanel extends React.Component {
             <Passion />
           </View>
         )} 
+        {openList[3].open && (
+          <View style={styles.contactWrapper}>
+            <ContactIcons />
+          </View>
+        )} 
         
       </View>
     );
@@ -106,6 +133,31 @@ export default class leftPanel extends React.Component {
 
 
 const styles = StyleSheet.create({
+menuTitle:{
+    textAlign: 'center',
+    fontSize: 60,
+    fontWeight: 'bold',
+    color: '#00CED1',
+    transform: [
+      {translateX: 300},
+      {translateY: -150},
+   ]
+    // margin:20
+},
+contactWrapper: {
+  width: 500,
+  height: 300,
+  backgroundColor: '#F0FFF0',
+  borderColor: '#808080',
+  justifyContent: 'center',
+  alignItems: 'center',
+  borderRadius: 10,
+  borderWidth: 5,
+  transform: [
+    {translateX: 50},
+    {translateY: 450},
+ ]
+},
   passion: {
     width: 500,
     height: 550,
@@ -126,7 +178,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 5,
     transform: [
-      {translateX: 30},
+      {translateX: 20},
       {translateY: 600},
    ]
   },
@@ -150,7 +202,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     transform: [
       {translateX: 550},
-      {translateY: -150},
+      {translateY: -120},
    ]
   },
   postButtonInfoHover: {
