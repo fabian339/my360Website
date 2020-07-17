@@ -49,7 +49,7 @@ export default class leftPanel extends React.Component {
 
   onClickProjects = e => {
     const url = 'https://github.com/fabian339';
-    NativeModules.LinkingManager.openURL(url);
+    NativeModules.CustomLinkingModule.openInNewTab(url);
   }
 
   onClickContact = e => {
@@ -82,13 +82,13 @@ export default class leftPanel extends React.Component {
             onEnter={() => this.setState({hover1: true})}
             onExit={() => this.setState({hover1: false})}
             onClick={this.onClickResume}>  
-            <Text style={styles.postButtonName}>My Resume</Text>
+            <Text style={styles.postButtonName}>Experience</Text>
           </VrButton>
           <VrButton style={hover2 ? styles.textBoxHover : styles.textBox}
             onEnter={() => this.setState({hover2: true})}
             onExit={() => this.setState({hover2: false})}
             onClick={this.onClickPassion}>  
-            <Text style={styles.postButtonName}>Passions</Text>
+            <Text style={styles.postButtonName}>Passion & Interest</Text>
           </VrButton>
           <VrButton style={hover3 ? styles.textBoxHover : styles.textBox}
             onEnter={() => this.setState({hover3: true})}
@@ -100,7 +100,7 @@ export default class leftPanel extends React.Component {
             onEnter={() => this.setState({hover4: true})}
             onExit={() => this.setState({hover4: false})}
             onClick={this.onClickContact}> 
-            <Text style={styles.postButtonName}>Contact</Text>
+            <Text style={styles.postButtonName}>Contact Me</Text>
           </VrButton>
         </View>
         {openList[0].open && (

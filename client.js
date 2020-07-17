@@ -1,11 +1,14 @@
 // This file contains the boilerplate to execute your React app.
 // If you want to modify your application's content, start in "index.js"
 
-import {ReactInstance,Location, Surface, Module} from 'react-360-web';
+import {ReactInstance, Surface, Module} from 'react-360-web';
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
     // Add custom options here
     fullScreen: true,
+    nativeModules: [
+      new CustomLinkingModule()
+    ],
     ...options,
   });
   const leftPanel = new Surface(1050, 1000, Surface.SurfaceShape.Flat);
@@ -45,9 +48,25 @@ function init(bundle, parent, options = {}) {
     r360.getDefaultSurface()
   );
 
+  r360._appearanceStateStack.push({
+      height: 100,
+      surface: skillSurface,
+      width: 200,
+    });
   // Load the initial environment
   r360.compositor.setBackground(r360.getAssetURL('room.jpg'));
 }
 
+class CustomLinkingModule extends Module {
+  constructor() {
+    super('CustomLinkingModule');
+  }
+
+  openInNewTab(url) {
+    window.open(url, '_blank');
+  }
+}
+
 
 window.React360 = {init};
+

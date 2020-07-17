@@ -7,7 +7,7 @@ export default class imageSurface extends React.Component {
     }
     render () {
         return (
-            <View style={{backgroundColor: 'black',width: 1000, height: 550,}}>
+            <View style={{backgroundColor: 'black',width: 1000, height: 550}}>
                 {this.state.loading && (
                    <Text> Loading image... </Text> 
                 )}
