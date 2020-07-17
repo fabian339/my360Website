@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import leftPanel from './src/leftPanel';
 import imageSurface from './src/imageSurface';
+import skillSurface from './src/skillSurface';
+
 
 
 import {
@@ -19,12 +21,12 @@ export default class my360App extends React.Component {
           <View style={styles.panel}>
             <View style={styles.greetingBox}>
               <Text style={styles.greeting}>
-                Hey there, Welcome to my 360 office.
+               Welcome to Marcos Fabian 360 Website
               </Text>
             </View>
             <View>
                 <Text style={{color: 'black', fontSize: 25}}>
-                  Please take a look around.
+                  Please take a look around
                 </Text>
             </View>
         </View>
@@ -61,3 +63,4 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('my360App', () => my360App);
 AppRegistry.registerComponent('leftPanel', () => leftPanel);
 AppRegistry.registerComponent('imageSurface', () => imageSurface);
+AppRegistry.registerComponent('skillSurface', () => skillSurface);
