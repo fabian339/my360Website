@@ -49,7 +49,7 @@ export default class leftPanel extends React.Component {
 
   onClickProjects = e => {
     const url = 'https://github.com/fabian339';
-    NativeModules.CustomLinkingModule.openInNewTab(url);
+    NativeModules.CustomLinkingModule.open(url);
   }
 
   onClickContact = e => {

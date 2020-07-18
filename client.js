@@ -2,6 +2,7 @@
 // If you want to modify your application's content, start in "index.js"
 
 import {ReactInstance, Surface, Module} from 'react-360-web';
+const w = window;
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
     // Add custom options here
@@ -60,11 +61,24 @@ function init(bundle, parent, options = {}) {
 class CustomLinkingModule extends Module {
   constructor() {
     super('CustomLinkingModule');
+
   }
 
-  openInNewTab(url) {
-    window.open(url, '_blank');
+  open(url) {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+      window.location = new URL(url, window.location);
+    }
+    if (
+      /Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+        ua
+      )
+    ) {
+      window.location = new URL(url, window.location);
+    }
+      window.open(url) 
   }
+    
 }
 
 

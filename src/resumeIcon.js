@@ -1,16 +1,15 @@
 import * as React from 'react';
-import {Image, Text,NativeModules, StyleSheet, VrButton, View, asset} from 'react-360';
+import {Image, Text, NativeModules, StyleSheet, VrButton, View, asset} from 'react-360';
 // import {ReactInstance, Surface, Module} from 'react-360-web';
-
+const link = NativeModules.CustomLinkingModule;
 export default class resumeIcon extends React.Component {
     state = {
         loading: true
     }
+
     onClickResume = e => {
-        // console.log(this.props);
-        // new ReactInstance().focusSurface('skillSurface');
         const url = 'https://drive.google.com/drive/folders/1OqfenKsdUCHWYVxlCY07MjNki-4OWi_C';
-        NativeModules.CustomLinkingModule.openInNewTab(url);
+        NativeModules.CustomLinkingModule.open(url);
     }
 
     render () {

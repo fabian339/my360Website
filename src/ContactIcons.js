@@ -7,13 +7,13 @@ export default class ContactIcons extends React.Component {
         loadingIcon2: true,
     }
     onClickEmail = e => {
-        const url = 'mailto:mrfabian.cs@gmail.com';
-        NativeModules.CustomLinkingModule.openInNewTab(url);
-      }
+      const url = 'mailto:mrfabian.cs@gmail.com';
+      NativeModules.CustomLinkingModule.open(url);
+    }
     
     onClickLinkedIn = e => {
       const url = 'https://www.linkedin.com/in/marcos-fabian-4698521a3/';
-      NativeModules.CustomLinkingModule.openInNewTab(url);
+      NativeModules.CustomLinkingModule.open(url);
     }
 
     render () {
