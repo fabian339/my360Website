@@ -8,7 +8,7 @@ export default class ContactIcons extends React.Component {
     }
     onClickEmail = e => {
       const url = 'mailto:mrfabian.cs@gmail.com';
-      NativeModules.CustomLinkingModule.open(url);
+      NativeModules.LinkingManager.openURL(url);
     }
     
     onClickLinkedIn = e => {
