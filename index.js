@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import leftPanel from './src/leftPanel';
 import imageSurface from './src/imageSurface';
 import skillSurface from './src/skillSurface';
-import resumeIcon from './src/resumeIcon';
-
-
+import viewResumeButtonSurface from './src/Buttons/viewResumeButtonSurface';
+import viewSkillButtonSurface from './src/Buttons/viewSkillButtonSurface'
+import backToFrontButtonSurface from './src/Buttons/backToFrontButtonSurface'
 
 import {
   AppRegistry,
@@ -16,7 +16,6 @@ import {
 
 export default class my360App extends React.Component {
   render() {
-    // console.log(this.props.name)
     return (
       <View>
           <View style={styles.panel}>
@@ -57,6 +56,7 @@ const styles = StyleSheet.create({
   },
   greeting: {
     fontSize: 30,
+    fontWeight: 'bold'
   },
 });
 
@@ -65,4 +65,6 @@ AppRegistry.registerComponent('my360App', () => my360App);
 AppRegistry.registerComponent('leftPanel', () => leftPanel);
 AppRegistry.registerComponent('imageSurface', () => imageSurface);
 AppRegistry.registerComponent('skillSurface', () => skillSurface);
-AppRegistry.registerComponent('resumeIcon', () => resumeIcon);
+AppRegistry.registerComponent('viewResumeButtonSurface', () => viewResumeButtonSurface);
+AppRegistry.registerComponent('viewSkillButtonSurface', () => viewSkillButtonSurface);
+AppRegistry.registerComponent('backToFrontButtonSurface', () => backToFrontButtonSurface);

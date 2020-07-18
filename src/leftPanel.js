@@ -67,11 +67,11 @@ export default class leftPanel extends React.Component {
     openList } = this.state;
     // console.log(openAbout);
     return (
-      <View style={{width: 900, height:900}}>
-        <View>
-          <Text style={styles.menuTitle}>Click to view: </Text>
-        </View>
+      <View style={{width: 1000, height:900}}>
         <View style={styles.menuWrapper}>
+          <View>
+            <Text style={styles.menuTitle}>Click to view: </Text>
+          </View>
           <VrButton style={hover0 ? styles.textBoxHover : styles.textBox}
             onEnter={() => this.setState({hover0: true})}
             onExit={() => this.setState({hover0: false})}
@@ -138,11 +138,6 @@ menuTitle:{
     fontSize: 60,
     fontWeight: 'bold',
     color: '#00CED1',
-    transform: [
-      {translateX: 300},
-      {translateY: -150},
-   ]
-    // margin:20
 },
 contactWrapper: {
   width: 500,
@@ -154,50 +149,53 @@ contactWrapper: {
   borderRadius: 10,
   borderWidth: 5,
   transform: [
-    {translateX: 50},
-    {translateY: 450},
+    {translateX: 30},
+    {translateY: 400},
  ]
 },
   passion: {
     width: 500,
-    height: 550,
+    height: 600,
     backgroundColor: '#F0FFF0',
     borderColor: '#808080',
     borderRadius: 10,
     borderWidth: 5,
     transform: [
-      {translateX: 100},
-      {translateY: 450},
+      {translateX: 30},
+      {translateY: 480},
    ]
   },
   resume: {
-    width: 600,
-    height: 800,
+    width: 500,
+    height: 600,
     backgroundColor: '#F0FFF0',
     borderColor: '#808080',
     borderRadius: 10,
     borderWidth: 5,
     transform: [
-      {translateX: 20},
-      {translateY: 600},
+      {translateX: 30},
+      {translateY: 480},
    ]
   },
   about: {
     width: 500,
-    height: 550,
+    height: 450,
     backgroundColor: '#F0FFF0',
     borderColor: '#808080',
     borderRadius: 10,
     borderWidth: 5,
     transform: [
-      {translateX: 100},
+      {translateX: 30},
       {translateY: 450},
    ]
   },
   menuWrapper: {
     width: 400,
     height: 600,
-    // backgroundColor: 'black',
+    borderColor: '#669999',
+    borderWidth: 5,
+    borderRadius: 20,
+    backgroundColor: '#ccffe6',
     justifyContent: 'center',
     alignItems: 'center',
     transform: [
