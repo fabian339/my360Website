@@ -6,6 +6,11 @@ import skillSurface from './src/skillSurface';
 import viewResumeButtonSurface from './src/Buttons/viewResumeButtonSurface';
 import viewSkillButtonSurface from './src/Buttons/viewSkillButtonSurface'
 import backToFrontButtonSurface from './src/Buttons/backToFrontButtonSurface'
+import viewInstructionButtonSurface from './src/Buttons/viewInstructionButtonSurface'
+import viewQuickTourButtonSurface from './src/Buttons/viewQuickTourButtonSurface'
+import viewQaButtonSurface from './src/Buttons/viewQaButtonSurface'
+import instructionsSurface from './src/instructionsSurface'
+import educationSurface from './src/educationSurface'
 
 import {
   AppRegistry,
@@ -68,3 +73,9 @@ AppRegistry.registerComponent('skillSurface', () => skillSurface);
 AppRegistry.registerComponent('viewResumeButtonSurface', () => viewResumeButtonSurface);
 AppRegistry.registerComponent('viewSkillButtonSurface', () => viewSkillButtonSurface);
 AppRegistry.registerComponent('backToFrontButtonSurface', () => backToFrontButtonSurface);
+AppRegistry.registerComponent('viewInstructionButtonSurface', () => viewInstructionButtonSurface);
+AppRegistry.registerComponent('viewQuickTourButtonSurface', () => viewQuickTourButtonSurface);
+AppRegistry.registerComponent('viewQaButtonSurface', () => viewQaButtonSurface);
+AppRegistry.registerComponent('instructionsSurface', () => instructionsSurface);
+AppRegistry.registerComponent('educationSurface', () => educationSurface);
+

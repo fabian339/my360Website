@@ -67,9 +67,27 @@ export const Passion = () => {
             <Text style={styles.category}>Write readable code</Text>
             <Text style={styles.category}>Support others</Text>
             <Text style={styles.category}>Challenge and proof myself</Text>
-            <Text style={styles.category}>Have fun</Text>
+            <Text style={styles.category}>Spend time with love ones</Text>
             <Text style={styles.category}>Watch and play Basketball</Text>
         </View>
+    )
+}
+
+export const SiteIntructions = () => {
+    return (
+    <View>
+        <Text style={styles.title}>Site Instructions</Text>
+        <Text style={styles.siteInstructions}>
+            Marcos Fabian is a Software Engineer that loves developing cool applications. 
+            He is very passionate about technology and love to keep learning 
+            and innovating in the field. He started his career in the 
+            engineering field at the age of 16 when he first built a computer 
+            from scratch. That was the trigger point that made him pursue a 
+            career in computer science. Additionally, he loves challenges. 
+            He believes that the best way of learning is by going 
+            through situations that will elevate his skill-set.  
+        </Text>
+    </View>
     )
 }
 
@@ -135,5 +153,12 @@ const styles = StyleSheet.create({
         margin: 15,
         fontWeight: 'bold',
         textDecorationLine: 'underline'
-    }
+    },
+    siteInstructions: {
+        textAlign: 'center',
+        fontSize: 25,
+        color: '#000000',
+        marginLeft: 10,
+        marginRight: 10
+    },
 });

@@ -2,8 +2,8 @@ import { StyleSheet } from 'react-360';
 
 export const styles = StyleSheet.create({
     btn: {
-        width: 150,
-        height: 150,
+        width: 175,
+        height: 175,
         backgroundColor: '#000000',
         borderColor: '#00CED1',
         borderRadius: 100,
@@ -12,8 +12,8 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     btnHover: {
-        width: 150,
-        height: 150,
+        width: 175,
+        height: 175,
         backgroundColor: '#0066ff',
         borderColor: '#00CED1',
         borderRadius: 100,

@@ -11,6 +11,8 @@ export default class skillSurface extends React.Component {
                     <Text style={styles.title}>Technical Skills</Text>
                 </View>
                 <View style={styles.imageContainer}>
+                <Image style={styles.logo} source={{uri: '../static_assets/logos/react.png'}} />
+                <Image style={styles.logo} source={{uri: '../static_assets/logos/react360.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/bootstrap.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/cpp.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/css.png'}} />
@@ -25,7 +27,6 @@ export default class skillSurface extends React.Component {
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/node.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/npm.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/rails.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/react.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/ruby.png'}} />
                 </View>
             </View>
