@@ -76,17 +76,27 @@ export const Passion = () => {
 export const SiteIntructions = () => {
     return (
     <View>
-        <Text style={styles.title}>Site Instructions</Text>
+        <Text style={styles.title}>About this site</Text>
         <Text style={styles.siteInstructions}>
-            Marcos Fabian is a Software Engineer that loves developing cool applications. 
-            He is very passionate about technology and love to keep learning 
-            and innovating in the field. He started his career in the 
-            engineering field at the age of 16 when he first built a computer 
-            from scratch. That was the trigger point that made him pursue a 
-            career in computer science. Additionally, he loves challenges. 
-            He believes that the best way of learning is by going 
-            through situations that will elevate his skill-set.  
+            Marcos 360 is a Web Application designed with the purpose of being unique and authentic. 
+            Most of the time, when we think of personal websites, we are already picturing a regular blog webite. 
+            For me, I wanted to be different. I wanted to learn something new and enjoyable. 
         </Text>
+        <View>
+            <Text style={styles.title}>Usage:</Text>
+            <Text style={styles.siteInstructions}>
+                * Rotate the background either by touching the screen or by long pressing and moving the mouse </Text>
+            <Text style={styles.siteInstructions}>* Click on buttons to view content </Text>
+        </View>
+        <View>
+            <Text style={styles.title}>Compatibility:</Text>
+            <Text style={styles.siteInstructions}>
+                * Works best on Desktop and Laptop devices, experience might differ on ios & android </Text>
+            <Text style={styles.siteInstructions}>
+                * Works best on Google Chrome and Opera Browser, experience might differ on other
+                browser such as Safari & Firefox
+                </Text>
+        </View>
     </View>
     )
 }
