@@ -16,12 +16,14 @@ export default class skillSurface extends React.Component {
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/bootstrap.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/cpp.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/css.png'}} />
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/less.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/firebase.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/git.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/html.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/java.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/jquery.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/material.png'}} />
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/angular.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/bitbucket.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/mongo.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/node.png'}} />
