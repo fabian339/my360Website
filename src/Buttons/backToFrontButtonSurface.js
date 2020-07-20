@@ -12,7 +12,7 @@ export default class backToFrontButtonSurface extends React.Component {
     }
 
     render () {
-        console.log(this.props)
+        // console.log(this.props)
         return (
             <VrButton style={this.state.hover ? styles.btnHover : styles.btn}
                 onEnter={() => this.setState({hover: true})}

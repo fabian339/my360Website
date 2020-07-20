@@ -8,7 +8,7 @@ export default class instructionsSurface extends React.Component {
         loading: true
     }
     onClickBtn = e => {
-        console.log("calling");
+        // console.log("calling");
         NativeModules.CustomLinkingModule.goToSiteInstructions();
     }
 

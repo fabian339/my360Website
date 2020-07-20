@@ -15,7 +15,7 @@ function init(bundle, parent, options = {}) {
   });
   const leftPanel = new Surface(1050, 1000, Surface.SurfaceShape.Flat);
   const skillSurface = new Surface(1024, 1050, Surface.SurfaceShape.Flat);
-  const imageSurface = new Surface(400, 400, Surface.SurfaceShape.Flat);
+  const imageSurface = new Surface(400, 450, Surface.SurfaceShape.Flat);
   const instructionsSurface = new Surface(800, 800, Surface.SurfaceShape.Flat);
   const educationSurface = new Surface(400, 400, Surface.SurfaceShape.Flat);
   //Buttons interfaces
@@ -28,7 +28,7 @@ function init(bundle, parent, options = {}) {
 
   leftPanel.setAngle(-1.3, -.15);
   skillSurface.setAngle(-3.25, -.1);
-  imageSurface.setAngle(0, -0.03);
+  imageSurface.setAngle(0, -0.06);
   instructionsSurface.setAngle(0, -1.6);
   educationSurface.setAngle(2.1, 0.3);
   //buttons angle
@@ -133,7 +133,7 @@ class CustomLinkingModule extends Module {
   }
 
   backToFronr(){
-            console.log(r360.getCameraQuaternion());
+            // console.log(r360.getCameraQuaternion());
     r360._cameraPosition = [0, 0, 0];
     r360._cameraQuat = [0, 0,  0, 1];
   }
