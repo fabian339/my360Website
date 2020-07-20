@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
     copyrightText: {
         textAlign: 'center',
         fontSize: 15, 
-        // backgroundColor: 'black', 
-        // color: '#A9A9A9'
+        backgroundColor: 'black', 
+        // color: 'yellow'
     }
   });
   

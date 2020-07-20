@@ -10,23 +10,29 @@ extends React.Component {
 
     render () {
         return (
-            <View style={styles.education}>
-                <Text style={styles.title}>Education: </Text>
-                <Text style={styles.detail}>B.A in Computer Science</Text>
+            <View style={{width: 350, height: 200} }>
+                <View style={styles.educationContainer}>
+                    <Text style={styles.title}>Education: </Text>
+                    <Text style={styles.detail}>B.A in Computer Science</Text>
+                </View>
             </View>
-
         )}
 }
 
 const styles = StyleSheet.create({
 
-    education: {
+    educationContainer: {
         width: 300,
         height: 150,
         backgroundColor: '#F0FFF0',
         borderColor: '#808080',
         borderRadius: 10,
         borderWidth: 5,
+        transform: [
+            {rotate: -10},
+            {translateX: 30},
+            {translateY: -20}
+         ]
     },
     title: {
         fontSize: 40,
@@ -35,11 +41,11 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         margin: 10
         },
-        detail: {
-            textAlign: 'center',
-            fontSize: 20,
-            color: 'black',
-            marginLeft: 5,
-            marginRight: 5
-        },
+    detail: {
+        textAlign: 'center',
+        fontSize: 20,
+        color: 'black',
+        marginLeft: 5,
+        marginRight: 5
+    },
 });

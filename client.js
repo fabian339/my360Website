@@ -17,7 +17,7 @@ function init(bundle, parent, options = {}) {
   const skillSurface = new Surface(1024, 1050, Surface.SurfaceShape.Flat);
   const imageSurface = new Surface(400, 450, Surface.SurfaceShape.Flat);
   const instructionsSurface = new Surface(800, 800, Surface.SurfaceShape.Flat);
-  const educationSurface = new Surface(400, 400, Surface.SurfaceShape.Flat);
+  const educationSurface = new Surface(500, 200, Surface.SurfaceShape.Flat);
   //Buttons interfaces
   const viewResumeButtonSurface = new Surface(800, 600, Surface.SurfaceShape.Flat);
   const viewSkillButtonSurface = new Surface(800, 600, Surface.SurfaceShape.Flat);
@@ -30,7 +30,7 @@ function init(bundle, parent, options = {}) {
   skillSurface.setAngle(-3.25, -.1);
   imageSurface.setAngle(0, -0.06);
   instructionsSurface.setAngle(0, -1.6);
-  educationSurface.setAngle(2.1, 0.3);
+  educationSurface.setAngle(2.1, 0.45);
   //buttons angle
   viewResumeButtonSurface.setAngle(1.65, -0.2);
   viewSkillButtonSurface.setAngle(1.3, -0.2);
