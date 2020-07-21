@@ -34,7 +34,7 @@ export const Resume = () => {
                 improve product’s development</Text>
         </View>
         <View>
-            <Text style={styles.organization}>Ask Applications (Yonkers, NY) - Boot-camp Participant</Text>
+            <Text style={styles.organization}>Ask Applications (Yonkers, NY)</Text>
             <Text style={styles.porsitionTitle}>Boot-camp Participant - (6/2019 - 7/2019)</Text>
             <Text style={styles.detail}>Developed and maintain Web Applications</Text>
             <Text style={styles.detail}>Developed Google Chrome Extensions</Text>
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     },
     openResume: {
         textAlign: 'center',
-        fontSize: 20,
+        fontSize: 25,
         color: '#003399',
         margin: 15,
         fontWeight: 'bold',
