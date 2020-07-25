@@ -2,6 +2,21 @@
 // If you want to modify your application's content, start in "index.js"
 
 import {ReactInstance, Surface, Module} from 'react-360-web';
+import {browser} from './request';
+
+// sending platform to db
+fetch('https://us-central1-marcos-fabian-web.cloudfunctions.net/api/submitRequest',
+  {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      platform: browser(),
+    })
+  });
+
 let r360;
 
 function init(bundle, parent, options = {}) {

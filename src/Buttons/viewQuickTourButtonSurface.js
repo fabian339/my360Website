@@ -14,15 +14,6 @@ export default class viewQuickTourButtonSurface extends React.Component {
         }
     }
 
-    // componentDidMount() {
-    //     this.setState({timerId: setInterval(() => {
-    //     })
-    //     setInterval(() => {
-    //       //do anything
-    //     }, 1000)
-      
-    //   }
-
     countDown = () => {
         if (this.state.seconds <= 0){
             clearInterval(this.state.timerId);
@@ -31,11 +22,8 @@ export default class viewQuickTourButtonSurface extends React.Component {
 
     }
 
-
     onClickBtn = e => {
-        // var timeleft = 10;
         this.setState({showTimer: true, timerId: setInterval(this.countDown,1000)})
-
         NativeModules.CustomLinkingModule.virtualTourt();
     }
 
