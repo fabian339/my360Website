@@ -26,7 +26,7 @@ export const Resume = () => {
     <View>
         <View>
             <Text style={styles.organization}>Ask Applications (Yonkers, NY) - Intern</Text>
-            <Text style={styles.porsitionTitle}>Front End Software Engineer - (6/2020-present)</Text>
+            <Text style={styles.porsitionTitle}>Front End Software Engineer - (6/2020-8/2020)</Text>
             <Text style={styles.detail}>Develop and maintain web products in a timely
                 fashion</Text>
             <Text style={styles.detail}>Deploy new or updated products to server</Text>

@@ -11,25 +11,38 @@ export default class skillSurface extends React.Component {
                     <Text style={styles.title}>Technical Skills</Text>
                 </View>
                 <View style={styles.imageContainer}>
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/react.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/react360.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/bootstrap.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/cpp.png'}} />
+                    {/* front end */}
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/javascript.png'}} />
+                    <Image style={{ width:100, height: 70, marginLeft: 20, marginRight: 20, marginTop: 35 }} source={{uri: '../static_assets/logos/react.png'}} />
+                    <View style={{ alignItems: 'center'}}>
+                        <Image style={styles.logo} source={{uri: '../static_assets/logos/react360.png'}} />
+                        <Text style={{marginTop: '-15px', color: '#191970', fontWeight: 'bold'}}>React 360°</Text>
+                    </View>
+                    <Image style={{ width:110, height: 100, marginLeft: 20, marginRight: 20, marginTop: 25 }} source={{uri: '../static_assets/logos/vuejs.png'}} />
+                    <Image style={{ width:100, height: 100, marginLeft: 20, marginRight: 20, marginTop: 25 }} source={{uri: '../static_assets/logos/jquery.png'}} />
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/rails.png'}} />
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/angular.png'}} />
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/html.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/css.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/less.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/firebase.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/git.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/html.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/java.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/jquery.png'}} />
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/bootstrap.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/material.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/angular.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/bitbucket.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/mongo.png'}} />
+
+                    {/* back end */}
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/node.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/npm.png'}} />
-                    <Image style={styles.logo} source={{uri: '../static_assets/logos/rails.png'}} />
+                    <Image style={{ width:100, height: 50, marginLeft: 20, marginRight: 20, marginTop: 35 }} source={{uri: '../static_assets/logos/firebase.png'}} />
+                    <Image style={{ width:110, height: 50, marginLeft: 20, marginRight: 20, marginTop: 35 }} source={{uri: '../static_assets/logos/mongo.png'}} />
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/cpp.png'}} />
+                    <Image style={styles.logo} source={{uri: '../static_assets/logos/java.png'}} />
                     <Image style={styles.logo} source={{uri: '../static_assets/logos/ruby.png'}} />
+
+                    {/* others */}
+                    <Image style={{ width:160, height: 70, marginLeft: 10, marginRight: 10, marginTop: 20 }} source={{uri: '../static_assets/logos/vs.png'}} />
+                    <Image style={{ width:80, height: 45, marginLeft: 10, marginRight: 10, marginTop: 35 }} source={{uri: '../static_assets/logos/npm.png'}} />
+                    <View style={{ alignItems: 'center'}}>
+                        <Image style={{ width:80, height: 60, margin: 20 }} source={{uri: '../static_assets/logos/yarn.png'}} />
+                        <Text style={{marginTop: '-15px', color: '#191970', fontWeight: 'bold'}}>Yarn</Text>
+                    </View>
                 </View>
             </View>
         )}
