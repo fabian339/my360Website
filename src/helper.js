@@ -25,28 +25,31 @@ export const Resume = () => {
     return (
     <View>
         <View>
-            <Text style={styles.organization}>Ask Applications (Yonkers, NY) - Intern</Text>
+            <Text style={styles.organization}>MadeInBrooklynGames (Brooklyn, NY)</Text>
+            <Text style={styles.porsitionTitle}>React360 Developer – (October 2020 – Present)</Text>
+            <Text style={styles.detail}>- Develop interactive React360 applications that ensures 
+                high traffic, page view, and user experience
+            </Text>
+            <Text style={styles.detail}>- Design framework for easy project modifications</Text>
+            <Text style={styles.detail}>- Collaborate directly with supervisor on new
+                ideas, implementations
+            </Text>
+        </View>
+        <View>
+            <Text style={styles.organization}>Ask Applications (Yonkers, NY)</Text>
             <Text style={styles.porsitionTitle}>Front End Software Engineer - (6/2020-8/2020)</Text>
-            <Text style={styles.detail}>Develop and maintain web products in a timely
+            <Text style={styles.detail}>- Develop and maintain web products in a timely
                 fashion</Text>
-            <Text style={styles.detail}>Deploy new or updated products to server</Text>
-            <Text style={styles.detail}>Write intensive, readable, and precise code to
+            <Text style={styles.detail}>- Deploy new or updated products to server</Text>
+            <Text style={styles.detail}>- Write intensive, readable, and precise code to
                 improve product’s development</Text>
         </View>
         <View>
             <Text style={styles.organization}>Ask Applications (Yonkers, NY)</Text>
             <Text style={styles.porsitionTitle}>Boot-camp Participant - (6/2019 - 7/2019)</Text>
-            <Text style={styles.detail}>Developed and maintain Web Applications</Text>
-            <Text style={styles.detail}>Developed Google Chrome Extensions</Text>
-            <Text style={styles.detail}>Built APIs to fetch data from server</Text>
-        </View>
-        <View>
-            <Text style={styles.organization}>East Side House Settlement (Bronx, NY)</Text>
-            <Text style={styles.porsitionTitle}>Math Instructor - (11/2018 - 6/2020)</Text>
-            <Text style={styles.detail}>Instructed clients in the ages 16 to 24 in different
-                levels of Algebra, Geometry, and Pre-calculus</Text>
-            <Text style={styles.detail}>Created and implemented lesson plan</Text>
-            <Text style={styles.detail}>Created and updated math website</Text>
+            <Text style={styles.detail}>- Developed and maintain Web Applications</Text>
+            <Text style={styles.detail}>- Developed Google Chrome Extensions</Text>
+            <Text style={styles.detail}>- Built APIs to fetch data from server</Text>
         </View>
         <VrButton
             onClick={ () => {
@@ -79,7 +82,7 @@ export const SiteIntructions = () => {
         <Text style={styles.title}>About this site</Text>
         <Text style={styles.siteInstructions}>
             Marcos 360 is a Web Application designed with the purpose of being unique and authentic. 
-            Most of the time, when we think of personal websites, we are already picturing a regular blog webite. 
+            Most of the time, when we think of personal websites, we are already picturing a regular blog website. 
             For me, I wanted to be different. I wanted to learn something new and enjoyable. 
         </Text>
         <View>
@@ -91,7 +94,7 @@ export const SiteIntructions = () => {
         <View>
             <Text style={styles.title}>Compatibility:</Text>
             <Text style={styles.siteInstructions}>
-                * Works best on Desktop and Laptop devices, experience might differ on ios & android </Text>
+                * Works best on Desktop and Laptop devices, experience might differ on iOS & Android </Text>
             <Text style={styles.siteInstructions}>
                 * Works best on Google Chrome and Opera Browser, experience might differ on other
                 browser such as Safari & Firefox

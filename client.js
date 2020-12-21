@@ -49,7 +49,7 @@ function init(bundle, parent, options = {}) {
   //buttons angle
   viewResumeButtonSurface.setAngle(1.65, -0.2);
   viewSkillButtonSurface.setAngle(1.3, -0.2);
-  backToFrontButtonSurface.setAngle(-2.9, -0.4);
+  backToFrontButtonSurface.setAngle(-2.95, -0.5);
   viewQuickTourButtonSurface.setAngle(-0.1, -0.26);
   viewInstructionButtonSurface.setAngle(0.77, -0.26);
   viewQaButtonSurface.setAngle(2.45, -0.215);
