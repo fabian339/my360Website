@@ -32,7 +32,7 @@ export default class viewQuickTourButtonSurface extends React.Component {
             <View style={{width: 250, alignItems: 'flex-end', height: 250,}}>
                 {(this.state.showTimer) && (
                 <View>
-                    <Text style={{fontSize: 30, color: '#00008B', fontWeight: 'bold'}}>Loading tour in {this.state.seconds}...</Text>
+                    <Text style={{fontSize: 30, fontWeight: 'bold', backgroundColor: "black", color: "#00CED1"}}>Loading tour in {this.state.seconds}...</Text>
                 </View>
                 )}
 

@@ -2,20 +2,20 @@
 // If you want to modify your application's content, start in "index.js"
 
 import {ReactInstance, Surface, Module} from 'react-360-web';
-import {browser} from './request';
+// import {browser} from './request';
 
 // sending platform to db
-fetch('https://us-central1-marcos-fabian-web.cloudfunctions.net/api/submitRequest',
-  {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      platform: browser(),
-    })
-  });
+// fetch('https://us-central1-marcos-fabian-web.cloudfunctions.net/api/submitRequest',
+//   {
+//     method: 'POST',
+//     headers: {
+//       Accept: 'application/json',
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({
+//       platform: browser(),
+//     })
+//   });
 
 let r360;
 
@@ -29,6 +29,7 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
   const leftPanel = new Surface(1050, 1000, Surface.SurfaceShape.Flat);
+  const backgroundChangePanel = new Surface(400, 200, Surface.SurfaceShape.Flat);
   const skillSurface = new Surface(1024, 1050, Surface.SurfaceShape.Flat);
   const imageSurface = new Surface(400, 450, Surface.SurfaceShape.Flat);
   const instructionsSurface = new Surface(800, 800, Surface.SurfaceShape.Flat);
@@ -44,12 +45,13 @@ function init(bundle, parent, options = {}) {
   leftPanel.setAngle(-1.3, -.15);
   skillSurface.setAngle(-3.25, -.1);
   imageSurface.setAngle(0, -0.06);
+  backgroundChangePanel.setAngle(0, -.5);
   instructionsSurface.setAngle(0, -1.6);
   educationSurface.setAngle(2.1, 0.45);
   //buttons angle
   viewResumeButtonSurface.setAngle(1.65, -0.2);
   viewSkillButtonSurface.setAngle(1.3, -0.2);
-  backToFrontButtonSurface.setAngle(-2.95, -0.5);
+  backToFrontButtonSurface.setAngle(-2.95, -0.55);
   viewQuickTourButtonSurface.setAngle(-0.1, -0.26);
   viewInstructionButtonSurface.setAngle(0.77, -0.26);
   viewQaButtonSurface.setAngle(2.45, -0.215);
@@ -108,6 +110,11 @@ function init(bundle, parent, options = {}) {
   );
 
   r360.renderToSurface(
+    r360.createRoot('backgroundChangePanel'),
+    backgroundChangePanel,
+  );
+
+  r360.renderToSurface(
     r360.createRoot('skillSurface'),
     skillSurface,
   );
@@ -119,14 +126,14 @@ function init(bundle, parent, options = {}) {
 
   // r360._cameraQuat = [-0.7346232715033357, -0.007038705675748206, -0.0076220934154369435, 0.6783959089500124];
 
-  r360.compositor.setBackground(r360.getAssetURL('room.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('/backgrounds/lake.jpeg'));
 }
 
 class CustomLinkingModule extends Module {
   constructor() {
     super('CustomLinkingModule');
-
   }
+
   virtualTourt(){
     let counter = 0;
     let virtualPosition = [

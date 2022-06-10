@@ -18,7 +18,7 @@ export default class viewInstructionButtonSurface extends React.Component {
                 onEnter={() => this.setState({hover: true})}
                 onExit={() => this.setState({hover: false})}
                 onClick={this.onClickBtn}>
-                    <Text style={styles.Text}>Site Instructions</Text> 
+                    <Text style={styles.Text}>Learn More</Text> 
             </VrButton>
         )}
 }

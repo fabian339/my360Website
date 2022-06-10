@@ -15,7 +15,7 @@ export default class imageSurface extends React.Component {
                     <Image style={{width:400,height: 400}} onLoadEnd={() => this.setState({loading: false})} source={asset('marcos.jpg')} />
                 </View>
                 <View style={styles.copyrightContainer} >
-                    <Text style={styles.copyrightText} > © Marcos 360 (2019-2020) </Text> 
+                    <Text style={styles.copyrightText} > © Marcos 360 (2021-2022) </Text> 
                 </View>
             </View>
         )}

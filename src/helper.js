@@ -25,31 +25,33 @@ export const Resume = () => {
     return (
     <View>
         <View>
+            <Text style={styles.organization}>HackerNoon (Remote)</Text>
+            <Text style={styles.porsitionTitle}>Senior Full Stack Software Engineer - (04/2021 - preset)</Text>
+            <Text style={styles.detail}>- Build APIs, develop interactive web applications/components, 
+                and handle server maintenance in a collaborative or independent manner
+            </Text>
+            <Text style={styles.detail}>- Supervise intern, collaborate in hiring processes, and assign 
+                direct projects
+            </Text>
+        </View>
+        <View>
+            <Text style={styles.organization}>Teleshop (Long Island, NY)</Text>
+            <Text style={styles.porsitionTitle}>Web Developer – (01/2021 – 04/2021)</Text>
+            <Text style={styles.detail}>- Develop product and custom pages using Shopify,
+                WordPress, HTML, JavaScript & CSS
+            </Text>
+            <Text style={styles.detail}>- Collaborate in developing new platforms, designing
+                graphics, and templating custom email campaign
+            </Text>
+        </View>
+        <View>
             <Text style={styles.organization}>MadeInBrooklynGames (Brooklyn, NY)</Text>
             <Text style={styles.porsitionTitle}>React360 Developer – (October 2020 – Present)</Text>
-            <Text style={styles.detail}>- Develop interactive React360 applications that ensures 
-                high traffic, page view, and user experience
-            </Text>
+            <Text style={styles.detail}>- Develop interactive React360 applications that ensures</Text>
             <Text style={styles.detail}>- Design framework for easy project modifications</Text>
             <Text style={styles.detail}>- Collaborate directly with supervisor on new
                 ideas, implementations
             </Text>
-        </View>
-        <View>
-            <Text style={styles.organization}>Ask Applications (Yonkers, NY)</Text>
-            <Text style={styles.porsitionTitle}>Front End Software Engineer - (6/2020-8/2020)</Text>
-            <Text style={styles.detail}>- Develop and maintain web products in a timely
-                fashion</Text>
-            <Text style={styles.detail}>- Deploy new or updated products to server</Text>
-            <Text style={styles.detail}>- Write intensive, readable, and precise code to
-                improve product’s development</Text>
-        </View>
-        <View>
-            <Text style={styles.organization}>Ask Applications (Yonkers, NY)</Text>
-            <Text style={styles.porsitionTitle}>Boot-camp Participant - (6/2019 - 7/2019)</Text>
-            <Text style={styles.detail}>- Developed and maintain Web Applications</Text>
-            <Text style={styles.detail}>- Developed Google Chrome Extensions</Text>
-            <Text style={styles.detail}>- Built APIs to fetch data from server</Text>
         </View>
         <VrButton
             onClick={ () => {

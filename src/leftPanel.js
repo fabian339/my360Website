@@ -219,7 +219,7 @@ contactWrapper: {
     padding: 10,
     margin: 10,
     height: 80,
-    backgroundColor: '#00FF7F',
+    backgroundColor: '#05676F',
     borderRadius: 20,
     borderColor: '#00CED1',
     borderWidth: 5,

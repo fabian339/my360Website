@@ -64,6 +64,12 @@ const styles = StyleSheet.create({
         // backgroundColor: 'black',
         width: 1000, 
         height: 550,
+        backgroundColor: '#F0FFF0',
+        borderColor: '#808080',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        borderWidth: 5,
     },
     title:{
         textAlign: 'center',

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import leftPanel from './src/leftPanel';
 import imageSurface from './src/imageSurface';
+import BackgroundChangePanel from './src/BackgroundChangePanel';
 import skillSurface from './src/skillSurface';
 import viewResumeButtonSurface from './src/Buttons/viewResumeButtonSurface';
 import viewSkillButtonSurface from './src/Buttons/viewSkillButtonSurface'
@@ -30,7 +31,7 @@ export default class my360App extends React.Component {
               </Text>
             </View>
             <View>
-                <Text style={{color: 'black', fontSize: 25}}>
+                <Text style={{fontSize: 25, color: "#00CED1", backgroundColor: "black", fontWeight:"bold"}}>
                   Please take a look around
                 </Text>
             </View>
@@ -58,6 +59,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     borderColor: '#639dda',
     borderWidth: 2,
+    margin: 5
   },
   greeting: {
     fontSize: 30,
@@ -69,6 +71,7 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('my360App', () => my360App);
 AppRegistry.registerComponent('leftPanel', () => leftPanel);
 AppRegistry.registerComponent('imageSurface', () => imageSurface);
+AppRegistry.registerComponent('backgroundChangePanel', () => BackgroundChangePanel);
 AppRegistry.registerComponent('skillSurface', () => skillSurface);
 AppRegistry.registerComponent('viewResumeButtonSurface', () => viewResumeButtonSurface);
 AppRegistry.registerComponent('viewSkillButtonSurface', () => viewSkillButtonSurface);
