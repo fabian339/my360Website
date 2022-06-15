@@ -26,7 +26,7 @@ export const Resume = () => {
     <View>
         <View>
             <Text style={styles.organization}>HackerNoon (Remote)</Text>
-            <Text style={styles.porsitionTitle}>Senior Full Stack Software Engineer - (04/2021 - preset)</Text>
+            <Text style={styles.porsitionTitle}>Senior Full Stack Software Engineer - (04/2021 - present)</Text>
             <Text style={styles.detail}>- Build APIs, develop interactive web applications/components, 
                 and handle server maintenance in a collaborative or independent manner
             </Text>
