@@ -6,7 +6,7 @@ import VideoModule from 'VideoModule';
 const backgrounds = [
     '/backgrounds/lake.jpeg',
     '/backgrounds/city.jpeg',
-    '/backgrounds/sky.jpeg',
+    '/backgrounds/bridge.jpeg',
     '/backgrounds/white.jpeg',
     '/backgrounds/malecon.jpeg',
     '/backgrounds/video.mp4'
